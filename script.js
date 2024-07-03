@@ -16,6 +16,9 @@ buttons.addEventListener("click", (event) => {
         console.log(operate(Number(firstNumber), operator, Number(secondNumber)));
         clearValues();
     }
+    if (target.textContent === "CLEAR") {
+        clearValues();
+    }
 });
 
 
