@@ -64,8 +64,10 @@ function substract(a, b) {
     return Math.round((a - b)*1000000)/1000000;
 };
 
-function divide(a, b) {
-    return Math.round((a / b)*1000000)/1000000;
+function divide(a, b) { 
+    if (a === 0 || b === 0)
+        return "LOL";
+    else return Math.round((a / b)*1000000)/1000000;
 };
 
 function multiply(a, b) {
