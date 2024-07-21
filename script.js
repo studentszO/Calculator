@@ -14,7 +14,10 @@ buttons.addEventListener("click", (event) => {
 
     if (display.textContent.length > 0 && ["/", "+", "*", "-", "="].includes(target.textContent)) {
 
-        if (firstNumber.length === 0 || equalTrue === 1){
+        if ((firstNumber.length === 0 || operator === "=") && target.textContent === "=")
+            display.textContent += "";
+
+        else if (firstNumber.length === 0 || equalTrue === 1){
             firstNumber = display.textContent;
             equalTrue = 0;
         }
