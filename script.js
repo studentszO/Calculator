@@ -57,19 +57,19 @@ function clearValues() {
 };
 
 function add(a, b) {
-    return a + b;
+    return Math.round((a + b)*1000000)/1000000;
 };
 
 function substract(a, b) {
-    return a - b;
+    return Math.round((a - b)*1000000)/1000000;
 };
 
 function divide(a, b) {
-    return a / b;
+    return Math.round((a / b)*1000000)/1000000;
 };
 
 function multiply(a, b) {
-    return a * b;
+    return Math.round((a * b)*1000000)/1000000;
 };
 
 function operate(numberOne, operator, numberTwo) {
